@@ -1,0 +1,258 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+  
+  :root {
+    --col-primary: #b10400;
+    --col-grey: #181818;
+    --col-grey-dark: #333;
+    --col-black: #000;
+    --col-black-light: #222;
+    --col-white: #fff;
+  }
+  
+  body {
+    font-size: 1.5rem;
+    font-family: "Courier New", Courier, monospace;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--col-black-light);
+  }
+
+
+  .header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-bottom: 2px solid rgb(104, 88, 103);
+    
+  }
+  .header_title{
+    font-size:2.5rem ;
+    color: var(--col-primary);
+    text-transform:capitalize ;
+  }
+
+  .nav_list{
+    list-style:none;
+    display: flex;
+
+  }
+  .nav_list_item{
+    padding: 2rem;
+    transition: all .8s;
+  }
+
+  .nav_list_item:hover{
+    background-color: var(--col-primary);
+    transform:rotate(5deg);
+  }
+  .nav_list_item:nth-child(even):hover{
+    transform: rotate(-8deg);
+  }
+  .nav_list_item a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    text-transform: capitalize;
+  color: var(--col-grey-dark);
+  font-weight: bold;
+  }
+
+
+.nav_list_item:hover a{
+color:var(--col-white)
+}
+
+
+.home{
+  background:url(../media/images/breakfast.jpg);
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  }
+  .textbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: rotate(-5deg);
+    width: 60%;
+
+  }
+
+
+  .title{
+    font-size: 7rem;
+    color:var(--col-white);
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 3.5rem;
+    
+  }
+  .home--btn{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--col-white);
+    border: 2px solid white;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: all .5s ease;
+    font-weight: 500;
+
+  }
+
+  .home--btn:hover{
+    transform: scale(.9);
+    
+  }
+
+  .batton-group>:first-child{
+    background-color: var(--col-primary);
+    border: 2px solid var(--col-primary);
+    
+  }
+  .images img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 40px 0 40px 0;
+
+
+
+  }
+  .disply-section{
+    padding: 5rem 0 5rem 0;
+  }
+
+  
+
+.display-box{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3rem;
+}
+
+  .display-box-image-container{
+    border: 5px solid var(--col-primary);
+    --size:25rem;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    padding: .5rem;
+  }
+
+  .display-box-image{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .display-box-name{
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+
+  }
+
+  .menu-section{
+    padding: 0 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .menu-card{
+    width: 35rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:antiquewhite;
+    margin: 15px 15px;
+
+    
+
+  }
+
+  .menu-card:hover .menu-card--image{
+
+    transform: scale(1.1);
+    box-shadow: 3px 3px 3px var(--col-black-light);
+  }
+ 
+
+  .menu-card-image-container{
+    width:100% ;
+    height:25rem ;
+    border: 20x solid red;
+  }
+
+  .menu-card--image{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-bottom-right-radius: 10rem;
+    transition: all .5s ease;
+    
+  }
+
+
+  .menu-card--image:hover{
+    transform: scale(1.1);
+    box-shadow: 3px 3px 3px var(--col-black-light);
+  }
+  .menu-card-title{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .menu-description{
+    text-align: center;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    color:var(--col-black);
+  }
+
+  
+  .menu-card-cta{
+    background-color: var(--col-primary);
+    border-radius: 3000px;
+    padding: 10px 20px;
+    color: var(--col-white);
+    text-decoration: none;
+    margin: 3rem 0;
+    text-transform: capitalize;
+    font-size: 2rem;
+
+  }
+
+  .menu-card-cta:hover{
+    transform: scale(1.1);
+    color: var(--col-white);
+    background-color:aqua;
+  }
